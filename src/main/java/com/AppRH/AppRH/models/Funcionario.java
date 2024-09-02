@@ -24,8 +24,7 @@ public class Funcionario implements Serializable {
 	private String data;
 	private String email;
 	
-	@OneToMany(mappedBy = "funcionario", cascade = CascadeType.REMOVE)
-	private List<Dependentes>dependentes;
+
 
 	public long getId() {
 		return id;
@@ -59,14 +58,7 @@ public class Funcionario implements Serializable {
 		this.email = email;
 	}
 
-	public List<Dependentes> getDependentes() {
-		return dependentes;
-	}
 
-	public void setDependentes(List<Dependentes> dependentes) {
-		this.dependentes = dependentes;
-	}
-	
 	
 	
 	
